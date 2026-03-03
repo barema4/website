@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F6FAF8;
+  --foreground: #0B1F14;
+  --green-900: #0B1F14;
+  --green-800: #143323;
+  --green-700: #1A4430;
+  --green-600: #22583F;
+  --green-500: #2D7A56;
+  --green-400: #4A9E75;
+  --green-300: #7CBFA0;
+  --green-200: #B0DCC6;
+  --green-100: #D9F0E5;
+  --green-50: #EEF8F3;
+  --frost: #E8F5EE;
+  --frost-dark: #D0EADD;
+  --gold: #C8963E;
+  --gold-light: #D4A94E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-green-900: var(--green-900);
+  --color-green-800: var(--green-800);
+  --color-green-700: var(--green-700);
+  --color-green-600: var(--green-600);
+  --color-green-500: var(--green-500);
+  --color-green-400: var(--green-400);
+  --color-green-300: var(--green-300);
+  --color-green-200: var(--green-200);
+  --color-green-100: var(--green-100);
+  --color-green-50: var(--green-50);
+  --color-frost: var(--frost);
+  --color-frost-dark: var(--frost-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
